@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylsheet" href="{{ url_for('static', filename='css/main.css')}}" />
+    <link rel="stylsheet" href="{{ url_for('static', filename='css/master.css')}}" />
+    {%if custom %}
+    <link rel="stylsheet" href="{{ url_for('static', filename='css/'+custom+'.css')}}" />
+    {%endif%}
+</head>
+<body>
+    {%if custom %}
+    <div>{{custom}}</div>
+    {% endif %}
+    {{ test }}
+    {%block body%} 
+    {% endblock %}
+</body>
+</html>

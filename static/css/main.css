@@ -1,0 +1,8 @@
+* {box-sizing: border-box
+ }
+body {
+    background-color: rgb(109, 159, 216);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.page-head,
+.page-description {text-align: center;}
